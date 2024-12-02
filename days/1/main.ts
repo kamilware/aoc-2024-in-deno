@@ -3,8 +3,8 @@ const day = 1
 console.log()
 console.log(`Advent of code, day= ${day}`)
 
-const filePath = './input/d1.txt'
-// const filePath = './test_input/d1.txt'
+const filePath = './input/1.txt'
+// const filePath = './test_input/1.txt'
 
 const f = Deno.readTextFileSync(filePath)
 const lines = f.trim().split('\n')
