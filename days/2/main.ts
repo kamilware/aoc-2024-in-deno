@@ -40,7 +40,7 @@ const isSafe = (report: Report) => {
 
 const canBeSafe = (report: Report) => {
 	for (let i = 0; i < report.length; i++) {
-		const newReport = report.slice(0, i).concat(report.slice(i + 1))
+		const newReport = [...report.slice(0, i), ...report.slice(i + 1)]
 
 		if (isSafe(newReport)) {
 			return true
@@ -89,3 +89,5 @@ console.log(`P1: safeReportCount= ${safeReportCount}`)
 console.log(
 	`P2: safeReportCountAfterDampening= ${safeReportCountAfterDampening}`,
 )
+
+console.log()
