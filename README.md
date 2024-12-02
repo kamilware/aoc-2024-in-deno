@@ -13,20 +13,25 @@ Input files are not included as per AOC terms. Place them inside "<root>/input"
 - ...
 
 # Running
+
 To get output run the shell script:
+
 - for day 1
+
 ```bash
 sh d1.sh
-``` 
--  for day 2
+```
+
+- for day 2
+
 ```bash
 sh d2.sh
 ```
+
 - for day 3
+
 ```bash
 sh d3.sh
-``` 
+```
+
 - ...
-
-
-
