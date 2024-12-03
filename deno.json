@@ -7,7 +7,7 @@
 	"tasks": {
 		"d1": "deno run --allow-read ./days/1/main.ts",
 		"d2": "deno run --allow-read ./days/2/main.ts",
-		"dev": "deno run --watch main.ts"
+		"d3": "deno run --allow-read ./days/3/main.ts"
 	},
 	"imports": {
 		"@std/assert": "jsr:@std/assert@1"
