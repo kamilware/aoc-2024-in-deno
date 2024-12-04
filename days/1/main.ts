@@ -12,7 +12,7 @@ const lines = f.trim().split('\n')
 const l1: number[] = []
 const l2: number[] = []
 
-lines.forEach((line) => {
+lines.forEach(line => {
 	line.trim()
 
 	const [a, b] = line.split('   ').map(Number)
@@ -36,11 +36,11 @@ console.log(`P1: total= ${total}`)
 let similarityScore = 0
 const counter: { [key: number]: number } = {}
 
-l2.forEach((v) => {
+l2.forEach(v => {
 	counter[v] = (counter[v] || 0) + 1
 })
 
-l1.forEach((v) => {
+l1.forEach(v => {
 	similarityScore += v * (counter[v] || 0)
 })
 

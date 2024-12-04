@@ -14,7 +14,7 @@ console.log(`Advent of code, day= ${day}`)
 
 	let total = 0
 
-	matches.forEach((match) => {
+	matches.forEach(match => {
 		const [x, y] = match.slice(4, -1).split(',').map(Number)
 		total += x * y
 	})
@@ -34,7 +34,7 @@ console.log(`Advent of code, day= ${day}`)
 	let total = 0
 	let enabled = true
 
-	matches.forEach((match) => {
+	matches.forEach(match => {
 		if (match === 'do()') {
 			enabled = true
 
