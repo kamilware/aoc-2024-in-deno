@@ -9,7 +9,8 @@
 		"d2": "deno run --allow-read ./days/2/main.ts",
 		"d3": "deno run --allow-read ./days/3/main.ts",
 		"d4": "deno run --allow-read ./days/4/main.ts",
-		"d5": "deno run --allow-read ./days/5/main.ts"
+		"d5": "deno run --allow-read ./days/5/main.ts",
+		"d6": "deno run --allow-read ./days/6/main.ts"
 	},
 	"imports": {
 		"@std/assert": "jsr:@std/assert@1"
