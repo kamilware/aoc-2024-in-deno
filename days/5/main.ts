@@ -112,15 +112,15 @@ const reorderUpdate = (update: number[]): number[] => {
 
 const reorderedIncorrect = incorrectUpdates.map(reorderUpdate)
 
-let sumIncorrect = 0
-for (const upd of reorderedIncorrect) {
-	sumIncorrect += upd[Math.floor(upd.length / 2)]
-}
-
 let sumCorrect = 0
-for (const upd of correctUpdates) {
-	sumCorrect += upd[Math.floor(upd.length / 2)]
-}
+correctUpdates.forEach(update => {
+	sumCorrect += update[Math.floor(update.length / 2)]
+})
+
+let sumIncorrect = 0
+reorderedIncorrect.forEach(update => {
+	sumIncorrect += update[Math.floor(update.length / 2)]
+})
 
 console.log(`P1: sum= ${sumCorrect}`)
 console.log(`P2: sum= ${sumIncorrect}`)
