@@ -13,7 +13,7 @@ const lines = f.trim().split('\n')
 const rules = new Map<number, number[]>()
 const updates: number[][] = []
 
-lines.forEach(line => {
+lines.forEach((line) => {
 	line = line.trim()
 
 	if (line.includes('|')) {
@@ -49,8 +49,8 @@ const isCorrectlyOrdered = (update: number[]): boolean => {
 	return true
 }
 
-const correctUpdates = updates.filter(u => isCorrectlyOrdered(u))
-const incorrectUpdates = updates.filter(u => !isCorrectlyOrdered(u))
+const correctUpdates = updates.filter((u) => isCorrectlyOrdered(u))
+const incorrectUpdates = updates.filter((u) => !isCorrectlyOrdered(u))
 
 const reorderUpdate = (update: number[]): number[] => {
 	const setUpdatePages = new Set(update)
@@ -113,12 +113,12 @@ const reorderUpdate = (update: number[]): number[] => {
 const reorderedIncorrect = incorrectUpdates.map(reorderUpdate)
 
 let sumCorrect = 0
-correctUpdates.forEach(update => {
+correctUpdates.forEach((update) => {
 	sumCorrect += update[Math.floor(update.length / 2)]
 })
 
 let sumIncorrect = 0
-reorderedIncorrect.forEach(update => {
+reorderedIncorrect.forEach((update) => {
 	sumIncorrect += update[Math.floor(update.length / 2)]
 })
 

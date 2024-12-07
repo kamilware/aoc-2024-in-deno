@@ -8,7 +8,7 @@ const filePath = './input/6.txt'
 // const filePath = './test_input/6.txt'
 
 const f = Deno.readTextFileSync(filePath)
-const lines = f.split('\n').map(l => l.trim())
+const lines = f.split('\n').map((l) => l.trim())
 
 const directions = {
 	UP: [-1, 0],
@@ -108,7 +108,7 @@ const simulate = (
 }
 
 {
-	const grid = lines.map(l => l.split(''))
+	const grid = lines.map((l) => l.split(''))
 
 	grid[guardStartPos[0]][guardStartPos[1]] = 'X'
 	let dir = guardStartDir
@@ -143,7 +143,7 @@ const simulate = (
 }
 
 {
-	const baseGrid = lines.map(l => l.split(''))
+	const baseGrid = lines.map((l) => l.split(''))
 	let positionCount = 0
 
 	for (let row = 0; row < baseGrid.length; row++) {
@@ -157,7 +157,7 @@ const simulate = (
 				continue
 			}
 
-			const gridCopy = baseGrid.map(r => [...r])
+			const gridCopy = baseGrid.map((r) => [...r])
 			gridCopy[row][col] = '#'
 
 			const loopDetected = simulate(

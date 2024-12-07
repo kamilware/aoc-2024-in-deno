@@ -61,9 +61,11 @@ const lines = f.trim().split('\n')
 
 let safeReportCount = 0
 let safeReportCountAfterDampening = 0
-const reports: Report[] = lines.map(line => line.trim().split(' ').map(Number))
+const reports: Report[] = lines.map((line) =>
+	line.trim().split(' ').map(Number)
+)
 
-reports.forEach(report => {
+reports.forEach((report) => {
 	const safe = isSafe(report)
 
 	if (safe) {
@@ -73,7 +75,7 @@ reports.forEach(report => {
 	// console.log(`${report} is ${!safe ? 'not' : ''} safe`)
 })
 
-reports.forEach(report => {
+reports.forEach((report) => {
 	const safe = isSafe(report)
 
 	if (safe || canBeSafe(report)) {
@@ -85,7 +87,7 @@ reports.forEach(report => {
 
 console.log(`P1: safeReportCount= ${safeReportCount}`)
 console.log(
-	`P2: safeReportCountAfterDampening= ${safeReportCountAfterDampening}`
+	`P2: safeReportCountAfterDampening= ${safeReportCountAfterDampening}`,
 )
 
 console.log()

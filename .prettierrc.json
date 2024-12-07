@@ -1,8 +1,8 @@
 {
-  "semi": false,
-  "arrowParens": "avoid",
-  "experimentalTernaries": true,
-  "useTabs": true,
-  "tabWidth": 4,
-  "singleQuote": true
+	"semi": false,
+	"arrowParens": "avoid",
+	"experimentalTernaries": true,
+	"useTabs": true,
+	"tabWidth": 4,
+	"singleQuote": true
 }
