@@ -15,7 +15,8 @@
 		"d8": "deno run --allow-read ./days/8/main.ts",
 		"d9": "deno run --allow-read ./days/9/main.ts",
 		"d10": "deno run --allow-read ./days/10/main.ts",
-		"d11": "deno run --allow-read ./days/11/main.ts"
+		"d11": "deno run --allow-read ./days/11/main.ts",
+		"d12": "deno run --allow-read ./days/12/main.ts"
 	},
 	"imports": {
 		"@std/assert": "jsr:@std/assert@1"
