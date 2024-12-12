@@ -40,7 +40,9 @@ const input = f
 
 			while (queue.length > 0) {
 				const [x, y] = queue.pop()!
-				if (visited[x][y]) continue
+				if (visited[x][y]) {
+					continue
+				}
 
 				visited[x][y] = true
 				area++
